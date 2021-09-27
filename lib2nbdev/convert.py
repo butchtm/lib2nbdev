@@ -139,7 +139,6 @@ def convert_lib():
     **Can only be run once**
     """
     print('Checking for a settings.ini...')
-    cfg_path, cfg_name = '.', 'settings.ini'
     generate_settings()
     print('Gathering files...')
     files = nbglob(extension='.py', config_key='lib_path', recursive=True)
